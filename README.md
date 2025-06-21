@@ -1,86 +1,84 @@
-I used Startup_profit_prediction dataset to predict the profit relationship with administration cost, marketing spend and R&D Spend.
 
-The outputs of the prediction are independent of cities. It is shown by using graphs.
+## 🧠 Project Overview
 
+This project uses the **Startup Profit Prediction dataset** to explore how different types of spending affect a startup’s profit. The goal is to build a simple machine learning model that can predict profit based on:
 
-Each row in the dataset represents one startup and includes the following information:
+* R\&D Spend
+* Administration Cost
+* Marketing Spend
 
-R&D Spend: Money spent on research and development
-Administration: Money spent on admin work like salaries, office costs, etc.
-Marketing Spend: Money spent on advertising and promotions
-State: The location of the startup (e.g., California, Florida)
-Profit: The actual profit made by the startup.
+The app is built using **Streamlit**, allowing users to enter input values and get instant predictions from the trained model.
 
-This kind of dataset is often included in beginner-level machine learning exercises, especially for learning linear regression. It’s small, easy to understand, and good for testing simple models.
-
-Here are **clear, simple instructions** on how to run your Streamlit-based app, either locally or online:
+The results are **independent of the startup's city**, as shown in the exploratory analysis and plots.
 
 ---
 
-## 🔧 How to Run the App
+## 📊 About the Dataset
 
-### 🖥️ Option 1: Run the App on Your Local Machine
+Each row in the dataset represents one startup and includes the following columns:
 
-#### Step 1: Clone the GitHub Repository
+* **R\&D Spend**: Money spent on research and development
+* **Administration**: Money spent on admin work (salaries, rent, etc.)
+* **Marketing Spend**: Money spent on advertising and promotions
+* **State**: The location of the startup (e.g., California, Florida)
+* **Profit**: The actual profit earned by the startup
 
-If you haven't already:
-
-```bash
-git clone https://github.com/Shivani3333/startup_profit_prediction_model.git
-cd startup_profit_prediction_model
-```
-
-#### Step 2: (Optional) Create a Virtual Environment
-
-This keeps your Python packages separate from other projects:
-
-```bash
-python -m venv venv
-venv\Scripts\activate     # On Windows
-# or
-source venv/bin/activate  # On macOS/Linux
-```
-
-#### Step 3: Install Required Python Packages
-
-Make sure you’re in the same folder as `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-#### Step 4: Run the Streamlit App
-
-```bash
-streamlit run app.py
-```
-
-After a few seconds, your browser will automatically open at `http://localhost:8501`.
+This dataset is commonly used in beginner-level machine learning tutorials for practicing **Linear Regression**. It’s simple and helps demonstrate how input features relate to a target variable (profit).
 
 ---
 
-## 🌐 Option 2: Run the App Online (Streamlit Cloud)
+## 🛠️ Tech Stack Used
 
-If you've already deployed the app, you can use the public URL.
-
-1. Visit:
-  [Open the Startup Profit Prediction App](https://startupprofitpredictionmodel-abcxyz.streamlit.app/)
-
-
-2. Use the input fields to enter:
-
-   * R\&D Spend
-   * Administration
-   * Marketing Spend
-
-3. Click the **Predict** button to see the estimated profit.
+* **Python**
+* **Pandas, NumPy** – data handling
+* **Matplotlib, Seaborn** – data visualization
+* **Scikit-learn** – machine learning (Linear Regression)
+* **Pickle** – saving the trained model
+* **Streamlit** – creating the web application
 
 ---
 
-## ✅ What You Need
 
-* Python installed (3.7 or higher recommended)
-* Internet connection (for installation or deployment)
-* Your model file (`model.pkl`) should be in the same folder as `app.py`
+### 🖥️ Run Locally
 
-Let me know if you'd like this added to your `README.md` or as a separate markdown file like `INSTRUCTIONS.md`.
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Shivani3333/startup_profit_prediction_model.git
+   cd startup_profit_prediction_model
+   ```
+
+2. **(Optional) Create a virtual environment**
+
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate       # For Windows  
+   # OR  
+   source venv/bin/activate    # For macOS/Linux
+   ```
+
+3. **Install required packages**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Streamlit app**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+The app will open in your browser at `http://localhost:8501`.
+
+---
+
+### 🌐 Run Online (Streamlit Cloud)
+
+You can also access the app online here:
+🔗 [Open the Startup Profit Prediction App](https://startupprofitpredictionmodel-abcxyz.streamlit.app/)
+
+##APPS visuals
+![image](https://github.com/user-attachments/assets/e84f5c68-6f29-4f03-a947-615d4ef0be5f)
+
+
