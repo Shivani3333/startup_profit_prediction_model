@@ -64,7 +64,8 @@ After a few seconds, your browser will automatically open at `http://localhost:8
 If you've already deployed the app, you can use the public URL.
 
 1. Visit:
-   **[https://shivani3333-startup-profit-prediction-model.streamlit.app]((https://startupprofitpredictionmodel-abcxyz.streamlit.app/))**
+  [Open the Startup Profit Prediction App](https://startupprofitpredictionmodel-abcxyz.streamlit.app/)
+
 
 2. Use the input fields to enter:
 
